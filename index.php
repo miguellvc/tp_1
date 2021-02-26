@@ -14,13 +14,13 @@
 	<form action="procesar.php?" method="post">
 		<h1>Registro</h1>
 		<label>Nombre</label>
-		<input type="text" name="nombre">
+		<input type="text" name="nombre" requerid>
 		<label>Apellido</label>
-		<input type="text" name="apellido">
+		<input type="text" name="apellido" requerid>
 		<label>Email</label>
-		<input type="email" name="email" >
+		<input type="email" name="email" requerid >
 		<label>Password</label>
-		<input type="password" name="password">
+		<input type="password" name="password" requerid>
 		
 		<div class="btn-contenedor">
 			<input class="btn btn-enviar" type="submit" name="Enviar">

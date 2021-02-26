@@ -1,6 +1,12 @@
 <?php
+if (isset($_POST['nombre'])) {
 
- if (isset($_POST['nombre']))
+=======
+ //recibimos los datos del formulario que vienen por Post
+ $nombre=$_POST['nombre'];
+ $apellido=$_POST['apellido'];
+ $email=$_POST["email"];
+ $password=$_POST["password"];
 	
 	//codificamos el password
 	$password = Password::codPassword($password);
@@ -15,7 +21,7 @@
 	
 	//
 	var_dump($datos);
-
+}
 // clase para codificar el password
 class Password {
 		public static function codPassword($password) {
