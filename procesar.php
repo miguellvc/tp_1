@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['nombre'])) {
 
+=======
  //recibimos los datos del formulario que vienen por Post
  $nombre=$_POST['nombre'];
  $apellido=$_POST['apellido'];
@@ -12,9 +13,9 @@ if (isset($_POST['nombre'])) {
 	
 	//creamos un array con los datos del registro para ser enviados al modelo.
 	$datos = [
-		"nombre" => $nombre,
-		"apellido" => $apellido,
-		"email" => $email,
+		"nombre" => $_POST['nombre'],
+		"apellido" => $_POST['apellido'],
+		"email" => $email=$_POST["email"],
 		"password" => $password
 	];
 	
